@@ -154,6 +154,11 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *Muestra sintética → archivo de oro `samples/quickstart/expected/result.json`; el comando, la marca de tiempo y los hashes de salida están en `screenshots.json` (`run_at` 2026-11-02T22:15:29+08:00, `output_sha256` que empieza por `2ba7ea50…`).*
 
+![Salida real de la ejecución del quickstart de dsh-eval-pack](docs/assets/dsh-eval-pack-demo.gif)
+
+*Repetición animada de una ejecución real registrada en este repositorio.*
+
+
 Aceptación pública/sintética: repite `node scripts/acceptance.mjs`; las filas están en `ACCEPTANCE.csv` (aquí se omiten las columnas `script` y `evidence_sha256`):
 
 | req_id | metric | threshold | actual | pass | source | counted |

@@ -154,6 +154,11 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *Synthetic sample → gold file `samples/quickstart/expected/result.json`; the command, timestamp, and output hashes are recorded in `screenshots.json` (`run_at` 2026-11-02T22:15:29+08:00, `output_sha256` starting with `2ba7ea50…`).*
 
+![Real dsh-eval-pack quickstart run output](docs/assets/dsh-eval-pack-demo.gif)
+
+*Animated replay of a real run recorded in this repository.*
+
+
 Public/synthetic acceptance: re-run `node scripts/acceptance.mjs`; the rows are in `ACCEPTANCE.csv` (the `script` and `evidence_sha256` columns are omitted here):
 
 | req_id | metric | threshold | actual | pass | source | counted |

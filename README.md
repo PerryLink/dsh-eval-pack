@@ -152,6 +152,11 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *合成样例 → 金标 `samples/quickstart/expected/result.json`；命令、时间与输出哈希见 `screenshots.json`（`run_at` 2026-11-02T22:15:29+08:00，`output_sha256` 以 `2ba7ea50…` 开头）。*
 
+![dsh-eval-pack quickstart 真实运行输出](docs/assets/dsh-eval-pack-demo.gif)
+
+*本仓库一次真实运行的动图回放。*
+
+
 公开/合成验收：重跑 `node scripts/acceptance.mjs`，逐行明细在 `ACCEPTANCE.csv`（此处省略 `script` 与 `evidence_sha256` 两列）：
 
 | req_id | metric | threshold | actual | pass | source | counted |

@@ -154,6 +154,11 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *सिंथेटिक सैंपल → गोल्ड फ़ाइल `samples/quickstart/expected/result.json`; कमांड, समय और आउटपुट हैश `screenshots.json` में हैं (`run_at` 2026-11-02T22:15:29+08:00, `output_sha256` `2ba7ea50…` से शुरू)।*
 
+![dsh-eval-pack quickstart का असली रन आउटपुट](docs/assets/dsh-eval-pack-demo.gif)
+
+*इस रिपॉज़िटरी में दर्ज असली रन का एनिमेटेड रीप्ले।*
+
+
 सार्वजनिक/सिंथेटिक स्वीकृति: `node scripts/acceptance.mjs` दोबारा चलाएँ; पंक्तियाँ `ACCEPTANCE.csv` में हैं (यहाँ `script` और `evidence_sha256` कॉलम छोड़े गए हैं):
 
 | req_id | metric | threshold | actual | pass | source | counted |
