@@ -11,6 +11,8 @@
 
 面向 DeepSeek Harness 的纯本地评分工具：lint 评测包结构、确定性 JSON 相等评分、汇总一次运行、无偏 pass@k 估计——四个工具全部只读，不联网、不调用模型、不上传。
 
+最近一次核验：DeepSeek Harness `dsh-v0.2.3-alpha.1`（2026-11-22）。
+
 [安装](#三步上手) · [配置](#配置) · [FAQ](#faq) · [简体中文](README.md) · [English](README.en.md) · [Español](README.es.md) · [Português](README.pt.md) · [हिन्दी](README.hi.md)
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3366CC?style=flat-square&labelColor=2B3245)](LICENSE)
@@ -156,7 +158,6 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *本仓库一次真实运行的动图回放。*
 
-
 公开/合成验收：重跑 `node scripts/acceptance.mjs`，逐行明细在 `ACCEPTANCE.csv`（此处省略 `script` 与 `evidence_sha256` 两列）：
 
 | req_id | metric | threshold | actual | pass | source | counted |
@@ -295,7 +296,7 @@ pnpm gate                                                   # 验收门禁：重
 node samples/quickstart/run.mjs --check                     # 合成样例，结尾打印 quickstart ok
 ```
 
-当前版本 `0.2.0`（与 `package.json` 一致）。测试：`node --test test/*.test.mjs` 全绿（6 个测试文件、15 个用例；`pnpm test` 已内置构建步骤）。`lib/` 是 tsc 构建产物、不入库（`.gitignore`），所以跑样例与测试前先 `pnpm build`。
+当前版本 `0.2.1`（与 `package.json` 一致）。测试：`node --test test/*.test.mjs` 全绿（6 个测试文件、15 个用例；`pnpm test` 已内置构建步骤）。`lib/` 是 tsc 构建产物、不入库（`.gitignore`），所以跑样例与测试前先 `pnpm build`。
 
 | 目录 | 内容 |
 |---|---|

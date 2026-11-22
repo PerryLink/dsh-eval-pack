@@ -11,6 +11,8 @@
 
 Um conjunto de ferramentas de pontuação totalmente local para o DeepSeek Harness: lint da estrutura do pacote, nota determinística por igualdade JSON, resumo de uma execução e estimativa não enviesada de pass@k — as quatro ferramentas são somente leitura, sem rede, sem chamada a modelo e sem upload.
 
+Última verificação: DeepSeek Harness `dsh-v0.2.3-alpha.1` (2026-11-22).
+
 [Instalar](#instalação-em-três-passos) · [Configuração](#configuração) · [FAQ](#faq) · [简体中文](README.md) · [English](README.en.md) · [Español](README.es.md) · [Português](README.pt.md) · [हिन्दी](README.hi.md)
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3366CC?style=flat-square&labelColor=2B3245)](LICENSE)
@@ -158,7 +160,6 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *Repetição animada de uma execução real registrada neste repositório.*
 
-
 Aceitação pública/sintética: repita `node scripts/acceptance.mjs`; as linhas estão em `ACCEPTANCE.csv` (aqui as colunas `script` e `evidence_sha256` são omitidas):
 
 | req_id | metric | threshold | actual | pass | source | counted |
@@ -297,7 +298,7 @@ pnpm gate                                                   # portão de aceita�
 node samples/quickstart/run.mjs --check                     # amostra sintética, deve imprimir quickstart ok
 ```
 
-Versão atual `0.2.0` (coincide com `package.json`). Testes: `node --test test/*.test.mjs` tudo verde (6 arquivos de teste, 15 casos; `pnpm test` compila antes). `lib/` é a saída do tsc e não é versionada (`.gitignore`), então rode `pnpm build` antes da amostra ou dos testes.
+Versão atual `0.2.1` (coincide com `package.json`). Testes: `node --test test/*.test.mjs` tudo verde (6 arquivos de teste, 15 casos; `pnpm test` compila antes). `lib/` é a saída do tsc e não é versionada (`.gitignore`), então rode `pnpm build` antes da amostra ou dos testes.
 
 | Diretório | Conteúdo |
 |---|---|

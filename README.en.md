@@ -11,6 +11,8 @@
 
 A purely local scoring toolkit for DeepSeek Harness: lint the pack structure, grade with deterministic JSON equality, summarize one run, and estimate unbiased pass@k — all four tools are read-only, with no network, no model call, and no upload.
 
+Last verified on DeepSeek Harness `dsh-v0.2.3-alpha.1` (2026-11-22).
+
 [Install](#three-step-setup) · [Configuration](#configuration) · [FAQ](#faq) · [简体中文](README.md) · [English](README.en.md) · [Español](README.es.md) · [Português](README.pt.md) · [हिन्दी](README.hi.md)
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3366CC?style=flat-square&labelColor=2B3245)](LICENSE)
@@ -158,7 +160,6 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *Animated replay of a real run recorded in this repository.*
 
-
 Public/synthetic acceptance: re-run `node scripts/acceptance.mjs`; the rows are in `ACCEPTANCE.csv` (the `script` and `evidence_sha256` columns are omitted here):
 
 | req_id | metric | threshold | actual | pass | source | counted |
@@ -297,7 +298,7 @@ pnpm gate                                                   # acceptance gate: r
 node samples/quickstart/run.mjs --check                     # synthetic sample, should print quickstart ok
 ```
 
-Current version `0.2.0` (matches `package.json`). Tests: `node --test test/*.test.mjs` all green (6 test files, 15 cases; `pnpm test` builds first). `lib/` is the tsc build output and is not committed (`.gitignore`), so run `pnpm build` before the sample or the tests.
+Current version `0.2.1` (matches `package.json`). Tests: `node --test test/*.test.mjs` all green (6 test files, 15 cases; `pnpm test` builds first). `lib/` is the tsc build output and is not committed (`.gitignore`), so run `pnpm build` before the sample or the tests.
 
 | Directory | Contents |
 |---|---|

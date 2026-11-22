@@ -11,6 +11,8 @@
 
 DeepSeek Harness के लिए पूरी तरह स्थानीय स्कोरिंग टूलकिट: पैक संरचना का lint, नियतात्मक JSON समानता स्कोरिंग, एक रन का सारांश और निष्पक्ष pass@k अनुमान — चारों टूल रीड-ओनली हैं, बिना नेटवर्क, बिना मॉडल कॉल और बिना अपलोड।
 
+अंतिम सत्यापन: DeepSeek Harness `dsh-v0.2.3-alpha.1` (2026-11-22).
+
 [इंस्टॉल](#तीन-चरणों-में-शुरुआत) · [कॉन्फ़िगरेशन](#कॉन्फ़िगरेशन) · [FAQ](#faq) · [简体中文](README.md) · [English](README.en.md) · [Español](README.es.md) · [Português](README.pt.md) · [हिन्दी](README.hi.md)
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-3366CC?style=flat-square&labelColor=2B3245)](LICENSE)
@@ -158,7 +160,6 @@ pass@1 mean 0.633333; pass@3 mean 0.9
 
 *इस रिपॉज़िटरी में दर्ज असली रन का एनिमेटेड रीप्ले।*
 
-
 सार्वजनिक/सिंथेटिक स्वीकृति: `node scripts/acceptance.mjs` दोबारा चलाएँ; पंक्तियाँ `ACCEPTANCE.csv` में हैं (यहाँ `script` और `evidence_sha256` कॉलम छोड़े गए हैं):
 
 | req_id | metric | threshold | actual | pass | source | counted |
@@ -297,7 +298,7 @@ pnpm gate                                                   # स्वीकृ
 node samples/quickstart/run.mjs --check                     # सिंथेटिक सैंपल, quickstart ok प्रिंट करना चाहिए
 ```
 
-वर्तमान वर्ज़न `0.2.0` (`package.json` से मेल खाता है)। टेस्ट: `node --test test/*.test.mjs` सब हरे (6 टेस्ट फ़ाइलें, 15 केस; `pnpm test` पहले बिल्ड करता है)। `lib/` tsc का बिल्ड आउटपुट है और वर्जन-नियंत्रित नहीं (`.gitignore`), इसलिए सैंपल या टेस्ट से पहले `pnpm build` चलाएँ।
+वर्तमान वर्ज़न `0.2.1` (`package.json` से मेल खाता है)। टेस्ट: `node --test test/*.test.mjs` सब हरे (6 टेस्ट फ़ाइलें, 15 केस; `pnpm test` पहले बिल्ड करता है)। `lib/` tsc का बिल्ड आउटपुट है और वर्जन-नियंत्रित नहीं (`.gitignore`), इसलिए सैंपल या टेस्ट से पहले `pnpm build` चलाएँ।
 
 | निर्देशिका | सामग्री |
 |---|---|
