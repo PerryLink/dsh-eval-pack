@@ -296,7 +296,7 @@ pnpm gate                                                   # 验收门禁：重
 node samples/quickstart/run.mjs --check                     # 合成样例，结尾打印 quickstart ok
 ```
 
-当前版本 `0.2.1`（与 `package.json` 一致）。测试：`node --test test/*.test.mjs` 全绿（6 个测试文件、15 个用例；`pnpm test` 已内置构建步骤）。`lib/` 是 tsc 构建产物、不入库（`.gitignore`），所以跑样例与测试前先 `pnpm build`。
+当前版本 `0.2.2`（与 `package.json` 一致）。测试：`node --test test/*.test.mjs` 全绿（6 个测试文件、15 个用例；`pnpm test` 已内置构建步骤）。`lib/` 是 tsc 构建产物、不入库（`.gitignore`），所以跑样例与测试前先 `pnpm build`。
 
 | 目录 | 内容 |
 |---|---|

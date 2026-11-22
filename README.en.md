@@ -298,7 +298,7 @@ pnpm gate                                                   # acceptance gate: r
 node samples/quickstart/run.mjs --check                     # synthetic sample, should print quickstart ok
 ```
 
-Current version `0.2.1` (matches `package.json`). Tests: `node --test test/*.test.mjs` all green (6 test files, 15 cases; `pnpm test` builds first). `lib/` is the tsc build output and is not committed (`.gitignore`), so run `pnpm build` before the sample or the tests.
+Current version `0.2.2` (matches `package.json`). Tests: `node --test test/*.test.mjs` all green (6 test files, 15 cases; `pnpm test` builds first). `lib/` is the tsc build output and is not committed (`.gitignore`), so run `pnpm build` before the sample or the tests.
 
 | Directory | Contents |
 |---|---|

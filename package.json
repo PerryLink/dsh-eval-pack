@@ -1,6 +1,6 @@
 {
   "name": "dsh-eval-pack",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Public/synthetic eval-pack lint and deterministic JSON grader; not a validated benchmark.",
   "type": "module",
   "main": "./lib/plugin/index.js",
@@ -9,7 +9,8 @@
     ".": {
       "types": "./lib/plugin/index.d.ts",
       "default": "./lib/plugin/index.js"
-    }
+    },
+    "./locale/*.json": "./locale/*.json"
   },
   "files": [
     "lib",
@@ -30,7 +31,8 @@
     "TROUBLESHOOTING.md",
     "screenshots.json",
     "icon.svg",
-    "samples"
+    "samples",
+    "locale/*.json"
   ],
   "dsh": {
     "bundle": {
@@ -102,5 +104,9 @@
     "@deepseek-ai/dsh-tools": {
       "optional": true
     }
+  },
+  "author": {
+    "name": "PerryLink",
+    "url": "https://github.com/PerryLink"
   }
 }

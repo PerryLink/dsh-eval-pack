@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Eval pack lint & grader",
+    "description": "Compare a small eval pack case by case with exact JSON equality and get the pass rate, the failing ids, and pass@k on the spot."
+  }
+}

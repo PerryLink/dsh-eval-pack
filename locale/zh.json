@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Eval pack 校验与评分",
+    "description": "把一小包评测样本逐条按 JSON 精确比对，当场拿到通过率、失败项和 pass@k。"
+  }
+}
